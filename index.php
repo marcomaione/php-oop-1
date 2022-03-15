@@ -18,8 +18,10 @@ class Movie {
         } else {
             echo "Devi inserire un numero!";
         }
+    }
 }
 
-$batman = new Movie('Azione','Il Cavaliere Oscuro:');
+$batman = new Movie('Azione:','Il Cavaliere Oscuro:');
 $batman->setVoto(10);
 echo 'Titolo = ' . $batman -> titolo . ' Genere = ' . $batman-> genere;
+echo 'Voto = '. $batman->voto;
